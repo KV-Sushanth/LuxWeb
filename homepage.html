@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Zara-Font/Bodoni Antiqua.otf">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="img">
+        
+    <div class="name">DERELICTE</div>
+    <div class="sidenav" id="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="openbtn" onclick="openNav()">☰</div>
+        <div class="spacing"></div>
+        <div class="search">SEARCH<hr></div>
+        <div class="filler">LOG IN</div>
+        <div class="filler">HELP</div>
+
+    </div>
+    <script>
+        function openNav(){
+        const sidenav = document.getElementById('sidenav');
+        sidenav.style.width = "250px";
+        sidenav.classList.remove("closed");
+    }
+    function closeNav(){
+        const sidenav = document.getElementById('sidenav');
+        sidenav.style.width = "0";
+        sidenav.classList.add("closed");
+    }
+    </script>
+</body>
+</html>

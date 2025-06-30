@@ -1,0 +1,140 @@
+@font-face {
+    font-family:Cardillac;
+    src: url(Font/Cardillac-Regular.ttf);
+}
+@font-face {
+    font-family:Bodoni ;
+    src: url(Font/Bodoni\ Antiqua.otf);
+}
+@font-face {
+    font-family: Futura;
+    src: url(Font/FuturaLight-Light.ttf);
+}
+.img{
+    background-image: url("Images/homepage5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height: 1150px;
+    margin: 0px;
+    z-index: -1;
+    position: absolute;
+}
+body{
+    padding: 0px;
+    background-color: black;
+    margin: 0px;
+}
+
+.name{
+    color: white;
+    font-family: Cardillac;
+    font-size: 125px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    position: fixed ;
+}
+.bottom{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0px;
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.089);
+    padding: 10px;
+    font-size: 20px;
+    font-family: Bodoni;
+}
+.sidenav {
+    position: fixed;
+    width: 0px;
+    height: 100%;
+    background-color: #111111ef;
+    overflow-x: hidden;
+    transition: width 0.5s ease;
+    padding-top: 60px;
+    z-index: 1;
+}
+.sidenav ul li a {
+    display: block;
+    color: white;
+    transition: opacity, transform;
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: Futura;
+    font-size: 30px;
+}
+.sidenav ul li{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.closebtn{
+    display: block;
+    color: white;
+    transition: opacity, transform;
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: Futura;
+    font-size: 20px;
+    font-weight: 550;
+}
+.sidenav.closed a,
+.sidenav.closed ul li a {
+    opacity: 0;
+    transform: scaleX(0);
+    pointer-events: none;
+}
+.closebtn{
+    text-align: right;
+    display: block;
+    padding: 32px 32px 0px 32px;
+}
+.openbtn{
+    cursor: pointer;
+    max-width:250px;
+    text-align: left;
+    padding:16px;
+    color:#fff;
+    font-size: 30px;
+    margin-top: 10px;
+    margin: 0;
+    margin-left: 20px;
+    font-family: Bodoni;
+}
+.openbtn:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.container{
+    width: 100%;
+    max-height: fit-content;
+    margin:0 0 0 0;
+    background-color: #fefefe4c;
+    border: 0px;
+    display: flex;
+    position: fixed;
+}
+.search{
+    color: #fff;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: Futura;
+    width: 150px;
+}
+.search hr{
+    margin-top: 3px;
+}
+.spacing{
+    width: 75%;
+    margin: 0;
+}
+.filler{
+       color: #fff;
+    margin: 15px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: Futura; 
+}
